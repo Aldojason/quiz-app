@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h2>INTERACTIVE QUIZ</h2>
+    <p><strong>Select Category</strong></p>
+    <div class="category-options options">
+      <button class="cate-option">programming</button>
+      <button class="cate-option">mathematics</button>
+      <button class="cate-option">geography</button>
+      <button class="cate-option">entertainment</button>
+    </div>
+    <p><strong>Number of Questions</strong></p>
+    <div class="question-option options">
+      <button class="cate-option">5</button>
+      <button class="cate-option">10</button>
+      <button class="cate-option">15</button>
+      <button class="cate-option">20</button>
+      <button class="cate-option">25</button>
+    </div>
+    <button class="start">Start Quiz</button>
+  </div>
+
+  <div class="quizcontainer">
+    <div class="quizheader">
+      <h2>QUIZ APPLICATION</h2>
+      <div class="timer">⏱ <span class="timeduration">15s</span></div>
+    </div>
+    <div class="quizcontent">
+      <h1>Question text</h1>
+      <ul class="options-list"></ul>
+    </div>
+    <div class="quizfooter">
+      <p class="questionstatus">1 of 10 question</p>
+      <button class="next-btn">NEXT</button>
+    </div>
+  </div>
+
+  <div class="resultcontainer">
+    <img class="resultimg" src="https://cdn-icons-png.flaticon.com/512/2278/2278992.png" />
+    <h2 class="resulttitle">Quiz Completed</h2>
+    <p class="resultmsg">You answered 0 out of 5 questions correctly. Great effort!</p>
+    <button class="tryagain">Try Again</button>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
